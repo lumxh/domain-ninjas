@@ -602,3 +602,187 @@ footer {
     margin: 0px 5px 0px 0px;
   }
 }
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    opacity: 0.7;
+  }
+
+  #main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #080e41;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-cta div {
+    padding: 0px;
+  }
+
+  #main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #main-logo img {
+    width: 65%;
+    height: 65%;
+  }
+
+  #main-text img {
+    margin-left: 25px;
+    width: 65%;
+    height: 65%;
+  }
+
+  #main-text-results {
+    text-align: center;
+  }
+
+  #main-text-results p {
+    font-size: 35px;
+  }
+
+  .benefits-text-description {
+    padding-top: 100px;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #f3f4f8;
+  }
+
+  .cards {
+    padding-top: 150px;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 80%;
+    padding: 50px 25px 25px 25px;
+  }
+
+  .features img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .write-us {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .contact-us {
+    font-size: 17.5px;
+    line-height: 30px;
+  }
+
+  .dont-like-forms {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .contact-form {
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .contact-form span {
+    margin-top: 10px;
+    margin-right: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0px;
+  }
+
+  #form {
+    background: #080e41;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+  }
+
+  #form p {
+    font-size: 22px;
+    line-height: 44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #form input,
+  #form textarea {
+    padding: 15px 0px 15px 20px;
+    font-size: 17.5px;
+    line-height: 24px;
+  }
+
+  #form input::placeholder,
+  #form textarea::placeholder {
+    font-size: 17.5px;
+    line-height: 24px;
+  }
+
+  .button button {
+    padding: 15px 60px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  footer {
+    padding-top: 85px;
+    width: 90%;
+  }
+
+  .footer-sections {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .copyright-wrapper {
+    flex-direction: column;
+  }
+
+  .copyright-text {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright-socials {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright-socials i {
+    margin: 0px 5px 0px 0px;
+  }
+}
