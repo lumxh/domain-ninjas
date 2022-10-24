@@ -19,44 +19,6 @@ body {
   align-items: center;
 }
 
-#main-purple {
-  position: absolute;
-  width: 40%;
-  height: 30%;
-  left: 50%;
-  top: 40%;
-  background: #9330cc;
-  filter: blur(100rem);
-  opacity: 0.7;
-  border-radius: 25%;
-  transform: rotate(110.5deg);
-}
-
-#main-blue {
-  position: absolute;
-  width: 40%;
-  height: 60%;
-  left: 15%;
-  top: 1%;
-  background: #1c3164;
-  filter: blur(100rem);
-  opacity: 0.7;
-  border-radius: 25%;
-}
-
-#main-red {
-  position: absolute;
-  width: 20%;
-  height: 50%;
-  left: 55%;
-  top: 1%;
-  background: #4a0f2a;
-  filter: blur(100rem);
-  opacity: 0.7;
-  border-radius: 25%;
-  transform: rotate(39.53deg);
-}
-
 #main-cta {
   display: flex;
   justify-content: center;
@@ -69,7 +31,7 @@ body {
   padding: 20px;
 }
 
-#main-text p {
+#main-text-results p {
   opacity: 0.9;
   padding-top: 150px;
   font-family: SfPro;
@@ -90,7 +52,7 @@ body {
 }
 
 .benefits {
-  padding-top: 150px;
+  padding-top: 100px;
   background-color: #080e41;
   width: 100%;
 }
@@ -158,11 +120,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   margin: 0 auto;
 }
 
 .card {
+  text-align: center;
   padding: 25px;
 }
 
@@ -449,7 +412,7 @@ footer {
   background-color: #080e41;
   border-radius: 50%;
   padding: 20px;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0px 5px 0px 5px;
 }
 
@@ -457,4 +420,185 @@ footer {
   background-color: #080e41;
   opacity: 0.7;
   transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  #main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #080e41;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main-cta div {
+    padding: 0px;
+  }
+
+  #main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #main-logo img {
+    width: 50%;
+    height: 50%;
+  }
+
+  #main-text img {
+    margin-left: 25px;
+    width: 50%;
+    height: 50%;
+  }
+
+  #main-text-results {
+    text-align: center;
+  }
+
+  #main-text-results p {
+    font-size: 30px;
+  }
+
+  .benefits-text-description {
+    padding-top: 100px;
+    font-size: 30px;
+    line-height: 50px;
+
+    color: #f3f4f8;
+  }
+
+  .cards {
+    padding-top: 150px;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+  }
+
+  .card {
+    padding: 50px 25px 25px 25px;
+  }
+
+  .features img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .write-us {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .contact-us {
+    font-size: 17.5px;
+    line-height: 30px;
+  }
+
+  .dont-like-forms {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .contact-form {
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .contact-form span {
+    margin-top: 10px;
+    margin-right: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0px;
+  }
+
+  #form {
+    background: #080e41;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+  }
+
+  #form p {
+    font-size: 22px;
+    line-height: 44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #form input,
+  #form textarea {
+    padding: 15px 0px 15px 20px;
+    font-size: 17.5px;
+    line-height: 24px;
+  }
+
+  #form input::placeholder,
+  #form textarea::placeholder {
+    font-size: 17.5px;
+    line-height: 24px;
+  }
+
+  .button button {
+    padding: 15px 60px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  footer {
+    padding-top: 85px;
+    width: 80%;
+  }
+
+  .footer-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 15px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .copyright-wrapper {
+    flex-direction: column;
+  }
+
+  .copyright-text {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright-socials {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright-socials i {
+    margin: 0px 5px 0px 0px;
+  }
 }
